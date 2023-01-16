@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>Response</title>
+	<style>
+	body{
+	background-color:sandybrown;
+	text-align:center;
+	font-size:40px;
+	font-family:Century gothic;
+	margin-top:150px;
+	}
+	</style>
+</head>
+<body>
+	<h1>Your Response has been recorded</h1>
+	<p>Thank you for sharing your valueable feedback we will get back to you asap.</p> 
+	<img src="res.png" style="width:150px;">
+</body>
+</html>
