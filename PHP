@@ -1,0 +1,284 @@
+Create database:
+<?php
+
+	$server="localhost";
+	$user="root";
+	$pw="";
+	$conn=mysqli_connect($server,$user,$pw);
+	if(!($conn))
+		echo "Could not connect";
+	else
+	{
+		echo "Connection sucessful<br>";
+		$sql1="CREATE DATABASE mumbaidrive";
+		if (mysqli_query($conn,$sql1)) 
+			echo "Database created Sucessfully<br>";
+		else
+			echo "Database not created Sucessfully";
+	}
+		mysqli_close($conn);
+?>
+Create table for locations:
+<?php
+	$server="localhost";
+	$user="root";
+	$pw="";
+	$dbname="mumbaidrive";
+	$conn=mysqli_connect($server,$user,$pw,$dbname); 
+	if(!($conn))
+		echo "Could not connect";
+	else 
+	{
+
+	$sql1= "CREATE TABLE aquarium (id INT(4) UNSIGNED AUTO_INCREMENT PRIMARY KEY, fname VARCHAR(20) NOT NULL, phone_no INT(10), age INT(2), tickets INT(1), total VARCHAR2(30))";
+	
+	if (mysqli_query($conn,$sql1))                                               
+			echo "Table created Sucessfully<br>";
+		else
+			echo "Table not created Sucessfully";
+	}
+
+	mysqli_close($conn);                
+?>
+Create feedback table:
+<?php
+	$server="localhost";
+	$user="root";
+	$pw="";
+	$dbname="mumbaidrive";
+	$conn=mysqli_connect($server,$user,$pw,$dbname); 
+	if(!($conn))
+		echo "Could not connect";
+	else 
+	{
+
+	$sql1= "CREATE TABLE feedback (id INT(4) UNSIGNED AUTO_INCREMENT PRIMARY KEY, fname VARCHAR(20) NOT NULL, mail VARCHAR(10), comment VARCHAR(150))";
+	
+	if (mysqli_query($conn,$sql1))                                               
+			echo "Table created Sucessfully<br>";
+		else
+			echo "Table not created Sucessfully";
+	}
+
+	mysqli_close($conn);                
+?>
+Getpow.php:
+<?php
+
+$con=mysqli_connect('localhost','root');
+
+if($con){
+	echo"Connection Successful";
+} else{
+	echo"No connection";
+}
+
+mysqli_select_db($con,'mumbaidrive');
+ 
+$fname=$_POST["name"];
+$phone_no=$_POST["phone"];
+$age=$_POST["age"];
+$tickets=$_POST["ticketno"];
+$total=$_POST["price"];
+
+$query = "insert into princeofwales (fname,phone_no,age,tickets,total) values('$fname','$phone_no','$age','$tickets','$total')";
+
+mysqli_query($con,$query);
+
+header("location:Thankyou.html");
+
+?>
+Getec.php:
+<?php
+
+$con=mysqli_connect('localhost','root');
+
+if($con){
+	echo"Connection Successful";
+} else{
+	echo"No connection";
+}
+
+mysqli_select_db($con,'mumbaidrive');
+ 
+$fname=$_POST["name"];
+$phone_no=$_POST["phone"];
+$age=$_POST["age"];
+$tickets=$_POST["ticketno"];
+$total=$_POST["price"];
+
+$query = "insert into elephantacaves(fname,phone_no,age,tickets,total) values('$fname','$phone_no','$age','$tickets','$total')";
+
+mysqli_query($con,$query);
+
+header("location:Thankyou.html");
+
+?>
+Getkh.php:
+<?php
+
+$con=mysqli_connect('localhost','root');
+
+if($con){
+	echo"Connection Successful";
+} else{
+	echo"No connection";
+}
+
+mysqli_select_db($con,'mumbaidrive');
+ 
+$fname=$_POST["name"];
+$phone_no=$_POST["phone"];
+$age=$_POST["age"];
+$tickets=$_POST["ticketno"];
+$total=$_POST["price"];
+
+$query = "insert into kanhericaves(fname,phone_no,age,tickets,total) values('$fname','$phone_no','$age','$tickets','$total')";
+
+mysqli_query($con,$query);
+
+header("location:Thankyou.html");
+
+?>
+Gettp.php:
+<?php
+
+$con=mysqli_connect('localhost','root');
+
+if($con){
+	echo"";
+} else{
+	echo"No connection";
+}
+
+mysqli_select_db($con,'mumbaidrive');
+
+$name = $phone_no = $age = $tickets = $total =" ";
+
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+
+if(!(empty($POST["name"]))||(empty($_POST["phone"]))||(empty($_POST["age"]))||(empty($_POST["ticketno"]))||(empty($_POST["price"]))){
+	header("location:Fill.html");
+	}
+
+else{
+ 
+$fname=$_POST["name"];
+$phone_no=$_POST["phone"];
+$age=$_POST["age"];
+$tickets=$_POST["ticketno"];
+$total=$_POST["price"];
+
+$query = "insert into taquarium (fname,phone_no,age,tickets,total) values('$fname','$phone_no','$age','$tickets','$total')";
+
+mysqli_query($con,$query);
+
+header("location:Thankyou.html");
+}
+}
+	mysqli_close($con);
+?>
+
+Getmd.php:
+<?php
+
+$con=mysqli_connect('localhost','root');
+
+if($con){
+	echo"Connection Successful";
+} else{
+	echo"No connection";
+}
+
+mysqli_select_db($con,'mumbaidrive');
+ 
+$fname=$_POST["name"];
+$phone_no=$_POST["phone"];
+$age=$_POST["age"];
+$tickets=$_POST["ticketno"];
+$total=$_POST["price"];
+
+$query = "insert into marinedrive(fname,phone_no,age,tickets,total) values('$fname','$phone_no','$age','$tickets','$total')";
+
+mysqli_query($con,$query);
+
+header("location:Thankyou.html");
+
+?>
+
+Review.php:
+<?php
+
+$con=mysqli_connect('localhost','root');
+
+if($con){
+	echo"";
+} else{
+	echo"No connection";
+}
+
+mysqli_select_db($con,'mumbaidrive');
+
+$name = $destination = $rating = $comment1 = " ";
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+
+if(!(empty($POST["name"]))||(empty($_POST["destination"]))||(empty($_POST["rating"]))||(empty($_POST["comment1"]))){
+
+header("location:Fill.html");
+
+}
+else{
+ 
+$fname=$_POST["name"];
+$destination=$_POST["destination"];
+$rating=$_POST["rating"];
+$comment1=$_POST["comment1"];
+
+$query = "insert into review (fname,destination,rating,comment1) values('$fname','$destination','$rating','$comment1')";
+
+mysqli_query($con,$query);
+
+header("location:Response.html");
+}
+}
+
+?>
+Feedback.php:
+<?php
+
+$con=mysqli_connect('localhost','root');
+
+if($con){
+	echo"";
+} else{
+	echo"No connection";
+}
+
+mysqli_select_db($con,'mumbaidrive');
+
+$name = $mail = $ans = $comment =" ";
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+
+if(!(empty($POST["name"]))||(empty($_POST["mail"]))||(empty($_POST["ans"]))||(empty($_POST["comment"]))){
+
+header("location:Fill.html");
+
+}
+else{
+ 
+$fname=$_POST["name"];
+$mail=$_POST["mail"];
+$ans=$_POST["ans"];
+$comment=$_POST["comment"];
+
+$query = "insert into feedback (fname,mail,ans,comment) values('$fname','$mail','$ans','$comment')";
+
+mysqli_query($con,$query);
+
+header("location:Response.html");
+}
+}
+
+?>
+
+
