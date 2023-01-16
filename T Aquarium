@@ -1,0 +1,150 @@
+
+<html>
+<head>
+	<title>Taraporewala Aquarium</title>
+	<style>
+	
+	hr{
+	border: 1px solid black;
+	opacity: 50%;
+	}
+	
+	body{
+		background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(tpback.jpeg);
+		background-size:cover;
+		background-attachment:fixed;
+	}
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="css/css4.css">
+	<script>
+	
+	function rescon(){
+	confirm("Are you sure you wish to refresh all the feilds?");
+	}
+	function subcon(){
+	confirm('Are you sure you wish to submit?');
+	}
+	var x,y=0;
+	function calc(){
+	x=document.getElementById("ticketno").value;
+	if(x<0)
+	{
+		document.getElementById("price1").value="Invalid Ticket Number";
+	}
+	else{
+		y=150*(Number(x));
+		document.getElementById("price1").value="INR "+y+" for "+x+" tickets";
+	}}
+
+		
+
+	function checka(){
+  	a = document.forms["valida"]["price"].value;
+	  if (a=="") {
+  	  alert("Please click on calculate");
+ 	   return false;
+	  }
+	}
+	
+	
+	</script>
+</head>
+
+<body>
+	<div class="navbar">
+		<nav>
+		<ul>
+		<li><a href="Home.html">Home</a></li>
+		<li><a href="About.html"> About </a></li>
+		<li><a href="Support.html">Support</a></li>
+		</ul>
+		</nav>
+	</div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+	<div class="general">
+		<h1>Taraporewala Aquarium</h1><br><hr><br><br>
+		<h3>About:</h3>
+		<br><p>Taraporewala Aquarium or Taraporevala Aquarium is India's oldest aquarium and one of the city's main attractions. It hosts marine and freshwater fishes. The aquarium is located on Marine Drive in Mumbai..
+
+It was re-opened after renovation on 3 March 2015. The renovated aquarium has a 12-feet long and 180 degree acrylic glass tunnel. The fish will be kept in large glass tanks, which will be lit with LED lights.
+
+2,000 fishes of over 400 species and has been renovated at a cost of Rs.22 crore (approx Rs 7.5 crore for aquariums and Rs. 16.5 crore for construction work done by Public Works department) .The exotic fish from overseas has been introduced at the new aquarium the number of new varieties of marine fish at 70. Helicopter,Arowana,Grouper,yellow-striped tang, blue-spotted stingray, star, clown, hark, trigger, Grouper, Moorish idol, Azure Damsel, Blueline Demoiselle, Purple Firefish, Cloudy Damsel, Copperband Butterflyfish, Schooling Bannerfish, Raccoon Butterflyfish, White Tail Trigger, Clown Triggerfish and Blue Ribbon Eel. The 40 new varieties of freshwater fish would include Red Devil, Jaguar, Electric Blue Jack Dempsey,Frontosa and Catfish. These fishes will be housed in larger tanks than before with imported flexi glass for better visibility. It also has sharks, turtles, rays, moray eels, sea turtles, small starfish and stingrays.</p>
+	</div>
+	<div class="general">
+		<h3>Species of fish:</h3>
+		<br><p>Damselfishes: territorial fish species including golden damselfish, moon tail, cocoa, striped, electric blue, talbot, and sergeant major damsel.
+Butterflyfishes: chevron, copper band, long-nose, eight band, red perl.
+Angelfishes : blue ring, regal, wraft and emperor angel fishes
+Triggerfishes : undulated, bluetooth, picasso and clown triggers.
+Marine eels: yellow head, white ribbon, black ribbon, blue ribbon and moray eel.
+Marine touch pool with sea cucumber, sea urchin, brittle star, tube worms, star fish and more</p>
+	</div>
+
+	<div class="general">
+	<h3>History</h3>
+	<p>Taraporewala Aquarium was built in 1951 at a cost of INR 800,000 (at the time equivalent to US 167,000 dollars using the fixed exchange rate of INR 4.79 to 1 US dollars). It had been inaugurated by Indias first president Rajendra Prasad. The aquarium is named after a Parsee Philanthropist D B Taraporewala who donated INR 200,000 (at the time equivalent to US US dollars 41,754 ) for the construction.</p>
+	</div>
+	<div class="general">
+		<h3>Some Interesting Facts:</h3><br>
+		<ol>
+		<li>Amphitheatre with 50 seats, screening documentaries on fish, marine ecosystems and environment conservation.</li><br>
+		<li>Touch pool, where curious visitors can touch star fish, sea urchins, sea cucumbers, and turtles.</li><br>
+		<li>Fish spa. You can dip your feet in one of ten tanks of Doctor fish (Garra rufa). The fish nibble and remove dead skin from your feet and legs.</li>
+		</ol>
+	<br>
+		<img src="tp1.jpeg"><img src="tp2.jpeg"><img src="tp3.jpeg" ><br><img src="tp4.jpeg" ><img src="tp5.jpeg" ><img src="tp6.jpeg">
+	</div>
+	<div class="forms">
+	<h3>Book Your Tour now:</h3>
+	<form name="valida" onsubmit="return checka()" action="gettp.php" method="post">
+	<table>
+		<tr><th> Price per head is INR 150</th></tr>
+
+		<tr>
+		<td><label for="name">Your Name:</label></td>
+		<td><input type="text" id="name" name="name" required></td>
+		</tr>
+		
+		<tr>
+		<td><label for="phone">Your Phone Number:</label></td>
+		<td><input type="text" id="phone" name="phone" placeholder="Not more than 10 Digits" title="10-digit Number required & Number cannot start with 0" pattern="[1-9]{1}[0-9]{9}" required></td>
+		</tr>
+
+		<tr>
+		<td><label for="age1">Your Age:</label></td>
+		<td><input type="number" id="age1" name="age" placeholder="Above 18" min="18" max="90"></td>
+		</tr>
+
+		<tr>
+		<td><label for="ticketno">How many tickets are required? :</label></td>
+		<td><input type="number" id="ticketno" name="ticketno" min="1" max="9" placeholder="Maximum 9" required></td>
+		</tr>
+
+		<tr>
+		<td><label for="price1">Your Total becomes:</label></td>
+		<td><input type="text" id="price1" name="price" readonly></td>
+		<td><input type="button" value="CALCULATE" class="btn" onclick="calc()">
+		</tr>
+		
+		<tr>
+		<td><input type="submit" value="SUBMIT" class="btn" onclick="subcon()" ></td>
+		<td><input type="reset" value="RESET" class="btn" onclick="rescon()"></td>
+		</tr>
+
+	</table>
+	</form>
+	</div>
+	<div class="forms1">
+	<p style="text-align:center;"><b><i>Click here for a quick view</i></b></p><br>
+
+	<form>
+	<input type="button" value="Elephanta Caves" onclick="location.href='Elephanta.html'" class="btn1">
+	<input type="button" value="Prince of Wales" onclick="location.href='Princeofwales.html'" class="btn1">
+	<input type="button" value="Marine Drive" onclick="location.href='md.html'" class="btn1">
+	<input type="button" value="Kanheri Caves" onclick="location.href='Kahneri.html'" class="btn1">
+	</form>
+	</div>
+<br><br>
+</body>
+</html>
