@@ -1,0 +1,310 @@
+Html:
+<html>
+<head>
+	<title>Prince of Wales</title>
+<link rel="stylesheet" type="text/css" href="css/css4.css">
+	<style>
+	
+	hr{
+	border: 1px solid black;
+	opacity: 50%;
+	}
+
+	body{
+		background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(princeofwales.jpg);
+		background-size:cover;
+		background-attachment:fixed;
+	}
+	</style>
+
+	
+	<script>
+	function pw1(){
+	alert('Indian Coins');
+	}
+	function pw2(){
+	alert('Chinese Snuff Bottles');
+	}
+	function pw3(){
+	alert('Bronze Statues from Harappan Civilization');
+	}
+	function pw4(){
+	alert('Durga Maa Statue');
+	}
+	function pw5(){
+	alert('Vessels used In Harappan Civilization');
+	}
+	function pw6(){
+	alert('Sculpture from Harappan Civilization');
+	}
+
+	function rescon(){
+	confirm("Are you sure you wish to refresh all the feilds?");
+	}
+	function subcon(){
+	confirm('Are you sure you wish to submit?');
+	}
+	var x,y=0;
+	function calc(){
+	x=document.getElementById("ticketno").value;
+	if(x<0)
+	{
+		document.getElementById("price1").value="Invalid Ticket Number";
+	}
+	else{
+		y=100*(Number(x));
+		document.getElementById("price1").value="INR "+y+" for "+x+" tickets";
+	}}
+
+		
+
+	function checka(){
+  	a = document.forms["valida"]["price"].value;
+	  if (a=="") {
+  	  alert("Please click on calculate");
+ 	   return false;
+	  }
+	}
+	
+	
+	</script>
+</head>
+
+<body>
+	<div class="navbar">
+		<nav>
+		<ul>
+		<li><a href="Home.html">Home</a></li>
+		<li><a href="About.html"> About </a></li>
+		<li><a href="Support.html">Support</a></li>
+		</ul>
+		</nav>
+	</div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+	<div class="general">
+		<h1>Prince Of Wales Museum</h1><br><hr><br><br>
+		<h3>About:</h3>
+		<br><p>Founded in 1905 the Prince of Wales museum was built in order to celebrate and memorialize the visit of King George V to India. It is located at Mahatma Gandhi Road, Kala Ghoda, Fort, Mumbai. The architecture of this museum is very attractive and therefore it is recognized as a heritage structure in Mumbai.</p>
+		<p>In the museum, you get to see rare and an amazing collection comprising of ancient artworks, sculptures, artifacts,terracotta, bronze, Indian miniature paintings, European paintings, excavated artifacts from the Harappan sites, porcelain and ivory from China and Japan.</p>
+		<p>Many new galleries containing the artworks of Hindu God Krishna, textiles and Indian traditional costumes, were opened after the completion of the renovation project in 2008. At present, the museum has three different parts for Natural history section, Archaeology section and Art section.</p>
+		<p>Many exhibitions and lectures are also held inside the museum, which increases the amount of visits by tourists. Every tourists visiting Mumbai from the world around definitely visits this beautiful heritage site to admire the ancients artifacts preserved since the 1900’s.</p>
+	</div>
+	<div class="general">
+		<h3>The Brilliant Architecture:</h3>
+		<br><p>Awarded the first place for Heritage Building Maintenance by the Indian Heritage Society, this beautifully designed and built museum has a fascinating architecture. The museum is built in the Indo-Saracenic style with Indian pillared hall and arched pavilion.</p>
+		<p>The main focus of attention is the  impressive Mughal white dome rising above the huge intersecting arches forming a beautiful geometrical pattern. It is designed after the Gol Gumbaz of Bijapur and adds gorgeousness to its appearance. Then there are small jalis for light and wind adding to the magnificence of the building.</p>
+		<p>George Wittet, the architect expertly integrated the original wooden arched pavilion, as a circular railing on the first floor of the building. The design of the building is an amalgamation of 15th, 16th century Gujarati and Islamic design and English brickwork. There are lavish  green gardens with delightful flower beds and palm trees surrounding the museum.</p>
+	</div>
+	<div class="general">
+		<h3>Some Interesting Facts:</h3><br>
+		<ol>
+		<li>It has a world-class collection of over 50,000 artifacts, making it one of India’s renowned art and history museum.</li><br>
+		<li>One of the galleries in the museum is dedicated to collectibles from the Mohenjodaro and Harappan civilizations to attract history lovers.</li><br>
+		<li>The coins gallery, has collections from various dynasties – from the era of Chandragupta to Shivaji Maharaj and Emperor Jahangir.</li>
+		<li>The must see things at the museum are- Chinese snuff bottles, India’s early picture books, a painting with a dark history, beginnings of graphic novels in India, a 10-yard sari that celebrates the best of Indian textiles, Akbar’s armour, Anwar-i-Suhayli, Jade work.</li>
+		</ol>
+	<br>
+		<img src="pw1.jpeg" onmouseover="pw1()"></img><img src="pw2.jpeg" onmouseover="pw2()"><img src="pw3.jpeg" onmouseover="pw3()"><br><img src="pw4.jpeg" onmouseover="pw4()"><img src="pw5.jpeg" onmouseover="pw5()"><img src="pw6.jpeg" onmouseover="pw6()">
+	</div>
+	<div class="forms">
+	<h3>Book Your Tour now:</h3>
+	<form name="valida" onsubmit="return checka()" action="getpow.php" method="post">
+	<table>
+		<tr><th> Price per head is INR 100</th></tr>
+
+		<tr>
+		<td><label for="name">Your Name:</label></td>
+		<td><input type="text" id="name" name="name" required></td>
+		</tr>
+		
+		<tr>
+		<td><label for="phone">Your Phone Number:</label></td>
+		<td><input type="text" id="phone" name="phone" placeholder="Not more than 10 Digits" title="10-digit Number required & Number cannot start with 0" pattern="[1-9]{1}[0-9]{9}" required></td>
+		</tr>
+
+		<tr>
+		<td><label for="age1">Your Age:</label></td>
+		<td><input type="number" id="age1" name="age" placeholder="Above 18" min="18" max="90"></td>
+		</tr>
+
+		<tr>
+		<td><label for="ticketno">How many tickets are required? :</label></td>
+		<td><input type="number" id="ticketno" name="ticketno" min="1" max="9" placeholder="Maximum 9" required></td>
+		</tr>
+
+		<tr>
+		<td><label for="price1">Your Total becomes:</label></td>
+		<td><input type="text" id="price1" name="price" readonly></td>
+		<td><input type="button" value="CALCULATE" class="btn" onclick="calc()">
+		</tr>
+		
+		<tr>
+		<td><input type="submit" value="SUBMIT" class="btn" onclick="subcon()" ></td>
+		<td><input type="reset" value="RESET" class="btn" onclick="rescon()"></td>
+		</tr>
+
+	</table>
+	</form>
+	</div>
+	<div class="forms1">
+	<p style="text-align:center;"><b><i>Click here for a quick view</i></b></p><br>
+
+	<form>
+	<input type="button" value="Elephanta Caves" onclick="location.href='Elephanta.html'" class="btn1">
+	<input type="button" value="Marine Drive" onclick="location.href='md.html'" class="btn1">
+	<input type="button" value="Kanheri Caves" onclick="location.href='Kahneri.html'" class="btn1">
+	<input type="button" value="T. Aquarium" onclick="location.href='Tare.html'" class="btn1">
+	</form>
+	</div>
+<br><br>
+</body>
+</html>
+CSS:
+*{
+	margin:0;
+	padding:0;
+	font-family: Century Gothic;
+	color:black;
+}
+
+
+
+nav{
+	width:100%;
+	height:80px;
+	background-color: #00000054;
+	line-height:80px;
+	position:fixed;
+	margin-top:0px;
+}
+
+nav ul{
+	float:right;
+	margin-right:30px;
+}
+
+nav ul li{
+	list-style-type:none;
+	display: inline-block;
+}
+
+nav ul li:hover{
+	background-color:peru;
+	transition: 1s all;
+}
+nav ul li a{
+	text-decoration:none;
+	color:white;
+	padding:30px;
+}
+
+.general{
+	margin-top:300px;
+	background-color:#ffa64dc7;
+	padding:15px;
+	font-size:18px;
+}
+
+.general ol li{
+	margin-left:22px;
+}
+
+h1{
+	text-align:center;
+	text-decoration:underline;
+	font-size:50px;
+}
+
+h3{
+	font-variant:small-caps;
+	font-size:30px;
+	line-height:30px;
+	color:sienna;
+}
+
+.general img{
+	display:inline-block;
+	width:250px;
+	height:250px;
+	margin-left:90px;
+	margin-right:60px;
+	margin-top:40px;
+	border-radius:10px;
+	border-style:double;
+	border-color:sienna;
+	
+}
+
+.general:hover{
+	background-color:#D2691E;
+}
+
+.forms{
+	font-size:20px;
+	margin-top:300px;
+	background-color:#ffa64dc7;
+	padding:15px;
+}
+
+.forms:hover{
+	background-color:#D2691E;
+}
+
+td{
+	padding:10px;
+}
+
+input{
+	padding:10px;
+	border-radius:7px;
+	border-style:none;
+	width:300px;
+}
+
+.btn {
+	
+	width:100px;
+	background-color:#ffdd99;
+	border-style:outset;
+	border-color:#ffa64d;
+	cursor:pointer;
+}
+
+input:hover{
+	background-color:burlywood;
+}
+
+input:focus{
+	background-color:chocolate;
+}
+
+th{
+	text-align:left;
+	color:saddlebrown;
+	padding:3px;
+}
+
+label{
+	font-weight:bold;
+	text-decoration:dashed;
+}
+
+.forms1{
+	text-align:center;
+	font-size:20px;
+	margin-top:300px;
+	background-color:#ffa64dc7;
+	padding:15px;
+}
+
+.forms1:hover{
+	background-color:#D2691E;
+}
+
+.btn1{
+	width:200px;
+	background-color:#ffdd99;
+	border-style:outset;
+	border-color:#ffa64d;
+	cursor:pointer;
+}
