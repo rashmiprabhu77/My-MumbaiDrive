@@ -1,0 +1,282 @@
+Html:
+<html>
+<head>
+	<title>My MumbaiDrive Home</title>
+	<link rel="stylesheet" type="text/css" href="css/css3.css">
+	<style>
+	h1{
+	opacity:80%;
+	}
+	h2{
+	font-variant:small-caps;
+	}
+	hr{
+	border: 2px solid Black;
+	opacity: 50%;
+	}
+	</style>
+	
+</head>
+<body>
+	
+	<div class="navbar">
+		<nav>
+		<ul>
+		<li><a href="About.html"> About </a></li>
+		<li><a href="Support.html">Support</a></li>
+		</ul>
+		</nav>
+	</div>
+<br><br><br><br><br><br>
+	<div class="welcome">
+	<h1> Welcome to My MumbaiDrive!</h1>
+	</div>
+<br><br><br>
+	<div class="description">
+	<div class="destype">
+	<h2 id="nam"></h2>
+	<br>
+	<p>We are delighted to have you here with us today Thank you for choosing My MumbaiDrive. Life is all about experiences and good memories! Your Comfort and Enjoyment is our top priority we make sure whichever adventure you decide on will be memorable and fun for you and your loved ones. Lets start by Choosing any of the following destination your heart calls you to experience:</p>
+
+	<script>
+	var name;
+	name=prompt('Please Enter Your Name');
+	document.getElementById("nam").innerHTML="Greetings "+name+",";
+	</script>
+	</div>
+</div>
+<br><br><br><form>
+	<div class="one">
+	<h3>Prince of Wales Museum</h3><br>
+	<img src="pw.jpeg"><br><br>
+	<p class="scroll">Does Old history and art intrigue you? Come visit Prince of Wales museum today to fill your good ol' old heart with joy</p><br><br>
+	<input type="button" value="Click" Onclick="location.href='Princeofwales.html'" >
+	</div>
+
+	<div class="one">
+	<h3>Marine Drive</h3><br>
+	<img src="md.jpeg"><br><br>
+	<p class="scroll">BEEP! This is a special message from Marine Drive they think today is a really great day for you to come visit</p><br><br>
+	<input type="button" value="Click" Onclick="location.href='md.html'">
+	</div>
+<br><br><br>
+	<div class="one">
+	<h3>Elephanta Caves</h3><br>
+	<img src="ec7.jpeg"><br><br>
+	<p class="scroll">A Collection of cave temples predominantly for our Lord Shiva, want to know more? come visit Elephanta Caves today!</p><br><br>
+	<input type="button" value="Click" Onclick="location.href='Elephanta.html'">
+	</div>
+
+	<div class="one">
+	<h3>Kanheri Caves</h3><br>
+	<img src="kh.jpeg"><br><br>
+	<p class="scroll">They contain Buddhist sculptures and relief carvings, paintings and inscriptions, dating from the 1st century CE!! Visit Kanheri Caves to know more about our awesome Indian History</p><br><br>
+	<input type="button" value="Click" Onclick="location.href='Kahneri.html'">
+	</div>
+	<br><br><br>
+	<div class="two">
+	<h3>T. Aquarium</h3><br>
+	<img src="tpmain.jpeg"><br><br>
+	<p class="scroll">Meet different kinds of fishes and sea life at Taraporewala Aquarium!</p><br><br>
+	<input type="button" value="Click" Onclick="location.href='Tare.html'">
+	</div>
+<br><br><br><br>
+
+</form>	
+</body>
+</html>
+Css:
+*{
+	margin:0;
+	padding:0;
+	font-family: Century Gothic;
+	color:white;
+}
+body{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../mum2.jpeg);
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+div{
+	background-color: #ff99334D;
+	border-radius:30px;
+	border-style:solid;
+	border-color:#ffcc664D;
+	border-width:10px;
+	display:inline-block;
+}
+
+.navbar{
+	border-style:none;
+	border-width:0px;
+}
+
+
+
+nav{
+	width:100%;
+	height:80px;
+	background-color: #00000054;
+	line-height:80px;
+	position:fixed;
+	margin:0;
+	padding:0;
+}
+
+nav ul{
+	float:right;
+	margin-right:30px;
+}
+
+nav ul li{
+	list-style-type:none;
+	display: inline-block;
+}
+
+nav ul li:hover{
+	background-color:peru;
+	transition: 1s all;
+}
+nav ul li a{
+	text-decoration:none;
+	color:white;
+	padding:30px;
+}
+
+.welcome{
+	width:60%;
+	margin-left:250px;
+	
+}
+.welcome h1{
+	color:white;
+	text-align:center;
+	opacity:80%;
+	font-size:100px;
+}
+
+.description{
+	border-left-style:none;
+	border-right-style:none;
+	font-size:25px;
+	Padding:20px;
+}
+
+.destype{
+	padding:10px;
+	border-style:none;
+	background-color:transparent;
+	line-height:40px;
+}
+
+.one{
+	border-left-style:none;
+	border-right-style:none;
+	font-size:25px;
+	font-style:italic;
+	Padding:10px;
+	width:350px;
+	text-align:center;
+	margin-left:140px;
+	margin-right:140px;
+	
+}
+
+.one:hover{
+	background-color:#D2691E40;
+}
+.one img{
+	width:220px;
+	height:200px;
+	border-radius:10px;	
+}
+
+.one input[type="button"]{
+	background-color:#000000CC;
+	padding:10px;
+	border-radius:7px;
+	font-size:30px;
+	border-style:none;
+}
+
+.one input[type="button"]:hover{
+	background-color:#F0E68CCC;
+	color:black;
+	padding:10px;
+	border-radius:7px;
+	font-size:30px;
+}
+
+.scroll{
+	width:200px;
+	height:100px;
+	border-radius:7px;
+	background-color:#000000CC;
+	overflow:scroll;
+	font-size:18px;
+	line-space:14px;
+	margin-left:70px
+}
+
+.scroll:hover{
+	width:200px;
+	height:100px;
+	border-radius:7px;
+	background-color:#F0E68CCC;
+	color:black;
+	overflow:scroll;
+	font-size:18px;
+	line-space:14px;
+	margin-left:70px
+}
+
+.scroll:active{
+	width:200px;
+	height:100px;
+	border-radius:7px;
+	background-color:#CD853FCC;
+	color:black;
+	overflow:scroll;
+	font-size:18px;
+	line-space:14px;
+	margin-left:70px
+}
+
+.two{
+	border-left-style:none;
+	border-right-style:none;
+	font-size:25px;
+	font-style:italic;
+	Padding:10px;
+	width:350px;
+	text-align:center;
+	margin-left:470px;
+	
+	
+}
+
+.two:hover{
+	background-color:#D2691E40;
+}
+.two img{
+	width:220px;
+	height:200px;
+	border-radius:10px;	
+}
+
+.two input[type="button"]{
+	background-color:#000000CC;
+	padding:10px;
+	border-radius:7px;
+	font-size:30px;
+	border-style:none;
+}
+
+.two input[type="button"]:hover{
+	background-color:#F0E68CCC;
+	color:black;
+	padding:10px;
+	border-radius:7px;
+	font-size:30px;
+}
