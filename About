@@ -1,0 +1,187 @@
+HTML:
+<html>
+<head>
+<title>About My MumbaiDrive</title>
+<link rel="stylesheet" type="text/css" href="css/css5.css">
+	
+	<script>
+	function load(){
+	alert("Thank you for wanting to know more about us!");
+	}
+	</script>
+</head>
+
+<body onload="load()">
+	<div class="navbar">
+		<nav>
+		<ul>
+		<li><a href="Home.html">Home</a></li>
+		<li><a href="Support.html">Support</a></li>
+		</ul>
+		</nav>
+	</div>
+<br><br><br><br><br>
+	<div class="name"><h1> About</h1></div>
+<br><br><hr><br><br><br><br>
+	<div class="mum"><h3>What is Mumbai?</h3>
+	<p><b><u>Mumbai</u></b> is the capital city of the Indian state of Maharashtra. According to the United Nations, as of 2018, Mumbai is the most populous city in the country and the seventh-most populous city in the world with a population of roughly 20 million. As per Indian government population census of 2011, Mumbai is the <b><i>most populous city in India</i></b> with an estimated city proper population of 12.5 million living under Municipal Corporation of Greater Mumbai. Mumbai is the centre of the Mumbai Metropolitan Region, the sixth most populous metropolitan area in the world with a population of over 23 million. Mumbai lies on the Konkan coast on the west coast of India and has a deep natural harbour. In 2008, Mumbai was named an alpha world city. It has the highest number of millionaires and billionaires among all cities in India. Mumbai is home to <i>three UNESCO World Heritage Sites: the Elephanta Caves, Chhatrapati Shivaji Maharaj Terminus, and the city's distinctive ensemble of Victorian and Art Deco buildings.</i></p>
+		
+	</div>
+<br><br><br><br><br><br>
+	<div class="detail"><h3>What is My MumbaiDrive</h3>
+	<p> My MumbaiDrive is a website made for wanderlust souls, Mumbai is a culturally diverse city with different people from different walks of life coexisting. With our busy lives we tend to forget about such things, My MumbaiDrive brings you closer to the cultures and diversity that surrounds you. With our expert travel guides we make sure to cover every popular location in Mumbai giving you knowledge and wisdom related to these beautiful places as you enjoy your new set adventure</p>
+	</div>
+<br><br><br><br><br><br>
+	<div class="why"><h3>Why My MumbaiDrive?</h3>
+	<p>For us Life is all about the experiences we have the people you meet and those who existed before us that made all of our individual existence connect with others'. So come along with us today! Bring your friends, family and loved ones and make memories in this beautiful city of dreams meet new people that exist at the same time as you and know about those who existed before you.</p>
+	</div>
+<br><br><br><br><br><br>
+	<div class="promo">
+	<form>
+	<input type="button" value="Click me!" onclick="location.href='Home.html'" >
+	</form>
+	</div>
+<br><br><br><br><br><br>
+</body>
+</html>
+CSS:
+*{
+	margin:0;
+	padding:0;
+	font-family: Century Gothic;
+	
+}
+
+hr{
+	opacity:50%;
+	border: double 4px black;
+}
+
+body {
+		background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(ab.jpeg);
+		background-size:cover;
+		background-attachment:fixed;
+}
+
+nav{
+	width:100%;
+	height:80px;
+	background-color: #00000054;
+	line-height:80px;
+	position:fixed;
+	margin-top:0px;
+}
+
+nav ul{
+	float:right;
+	margin-right:30px;
+}
+
+nav ul li{
+	list-style-type:none;
+	display: inline-block;
+	font-size:16px;
+}
+
+nav ul li:hover{
+	background-color:peru;
+	transition: 1s all;
+	font-size:16px;
+}
+nav ul li a{
+	text-decoration:none;
+	color:white;
+	padding:30px;
+}
+
+div{
+	background-color:#ff9933cc;
+	font-size:18px;
+	
+}
+ 
+.name{
+	text-align:center;
+	font-size:40px;
+	width:250px;
+	padding:20px;
+	margin-left:530px;
+	border-radius:100px;		
+}
+
+.navbar{
+	margin-top:0px;
+}
+
+.mum{
+	width:50%;
+	height:55%;
+	padding:10px;
+	margin-left:10px;
+	border-radius:10px;
+	text-align:justify;
+}
+
+h3{
+	text-align:center;
+}
+
+.why{
+	width:50%;
+	height:25%;
+	padding:10px;
+	margin-left:10px;
+	border-radius:10px;
+	text-align:justify;
+}
+
+.detail{
+	width:50%;
+	height:30%;
+	padding:10px;
+	margin-left:640px;
+	border-radius:10px;
+	text-align:justify;
+}
+
+.promo{
+	padding:10px;
+	text-align:center;
+}
+
+input[type="button"]{
+	padding:10px;
+	background-color:sienna;
+	color:white;
+	border-radius:10px;
+	border-style:solid;
+	border-width:2px;
+	border-color:white;
+	width:200px;
+	font-size:30px;
+	cursor:pointer;
+
+}
+
+input[type="button"]:hover{
+	background-color:peru;
+	color:black;
+	transition: 0.5s ease;
+}
+
+.detail:hover{
+	background-color: #d2691ecc;
+	color:white;
+	transition: 0.5s ease;
+}
+
+.mum:hover{
+	background-color: #d2691ecc;
+	color:white;
+	transition:0.5s ease;
+}
+.why:hover{
+	background-color: #d2691ecc;
+	color:white;
+	transition:0.5s ease;
+}
