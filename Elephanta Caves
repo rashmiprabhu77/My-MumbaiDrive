@@ -1,0 +1,154 @@
+<html>
+<head>
+	<title>Elephanta Caves</title>
+	<style>
+	
+	hr{
+	border: 1px solid black;
+	opacity: 50%;
+	}
+	
+	body{
+		background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(ecback.jpeg);
+		background-size:cover;
+		background-attachment:fixed;
+	}
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="css/css4.css">
+	<script>
+	function pw1(){
+	alert('Trimurti: 3 Headed Shiva');
+	}
+	function pw2(){
+	alert('Entrance to Caves');
+	}
+	function pw3(){
+	alert('Ardhanarishvara: Half Parvati and Half Shiva');
+	}
+	function pw4(){
+	alert('Marraige of Shiva and Parvati');
+	}
+	function pw5(){
+	alert('Shiva slaying Andhaka');
+	}
+	function pw6(){
+	alert('Shiva as Nataraja');
+	}
+	function rescon(){
+	confirm("Are you sure you wish to refresh all the feilds?");
+	}
+	function subcon(){
+	confirm('Are you sure you wish to submit?');
+	}
+	var x,y=0;
+	function calc(){
+	x=document.getElementById("ticketno").value;
+	y=150*(Number(x));
+	document.getElementById("price1").value="INR "+y+" for "+x+" tickets";
+	}
+
+		
+
+	function checka(){
+  	a = document.forms["valida"]["price"].value;
+	  if (a=="") {
+  	  alert("Please click on calculate");
+ 	   return false;
+	  }
+	}
+	
+	
+	</script>
+</head>
+
+<body>
+	<div class="navbar">
+		<nav>
+		<ul>
+		<li><a href="Home.html">Home</a></li>
+		<li><a href="About.html"> About </a></li>
+		<li><a href="Support.html">Support</a></li>
+		</ul>
+		</nav>
+	</div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+	<div class="general">
+		<h1>Elephanta Caves</h1><br><hr><br><br>
+		<h3>About:</h3>
+		<br><p>The Elephanta Caves are located in Western India on Elephanta Island (otherwise known as the Island of Gharapuri), which features two hillocks separated by a narrow valley. The small island is dotted with numerous ancient archaeological remains that are the sole testimonies to its rich cultural past. These archaeological remains reveal evidence of occupation from as early as the 2nd century BC. </p>
+		<p>The fifteen large reliefs surrounding the lingam chapel in the main Elephanta Cave not only constitute one of the greatest examples of Indian art but also one of the most important collections for the cult of Shiva.</p>
+		<p>The most important among the caves is the great Cave 1, which measures 39 metres from the front entrance to the back. In plan, this cave in the western hill closely resembles Dumar Lena cave at Ellora, in India. The main body of the cave, excluding the porticos on the three open sides and the back aisle, is 27 metres square and is supported by rows of six columns each.</p>	
+</div>
+	<div class="general">
+		<h3>History:</h3>
+		<br><p>A lack of archeological evidence means it's uncertain who exactly made the Elephanta Caves or when. Based on other similar caves in the region, the Elephanta Caves are widely thought to have been constructed sometime around the 6th century AD, either by king Krishnaraja of the Kalachuri Dynasty or by Chalukya Dynasty rulers. These dynasties were established in the region after the decline of the Vakataka Dynasty in the 6th century.</p>
+		<p>The island was called Elephanta Island by the Portuguese in the 16th century after they acquired it from the Gujarat Sultanate and discovered a sizeable rock-cut stone elephant statue there (the figure is now on display outside the Bhau Daji Lad Museum in Mumbai). </p>
+		<p>By the time the British gained control of Bombay in the 17th century, the caves had become quite damaged. Large sections had been either vandalized or ruined by natural forces. However, as Bombay grew, Hindus returned to worship at the caves. The caves weren't restored until the late 1970s, though, when the Indian government decided to make them a tourist site. They're currently managed by the Archeological Survey of India.</p>
+	</div>
+	<div class="general">
+		<h3>Some Interesting Facts:</h3><br>
+		<ol>
+		<li>The lining of the cave walls comprises of a series of sculptured panels that portray images from Indian mythology. The main sculpture inside the Elephanta Caves is the Trimurti Sadasiva, which is 20 ft in height, is that of the three headed-Lord, representing Panchamukha (five headed) Shiva.</li><br>
+		<li>The central Shiva relief Trimurti is sited on the south wall and is flanked by Ardhanarisvara which is a half-woman, half-man representation of Shiva, on its left and you can see Gangadhara on its right. This symbolizes the River Ganges’ descent from Shiva’s matted locks. </li><br>
+		<li>In 1987, the famous Elephanta Caves was given a title of a UNESCO World Heritage Site</li><br>
+		<li>At  Elephanta Caves there are a lot more depictions of Lord Shiva, such as depiction of Lord Shiva as Yogisvara which means (Lord of Yogis), it is seated on a lotus, and another depiction as Shiva Nataraja, which is the many-armed cosmic dancer. Some of the Other sculptures include the depiction of Shiva crushing Ravana with his toe, and the marriage of Shiva and Parvati.</li>
+		</ol>
+	<br>
+		<img src="ec1.jpeg" onmouseover="pw1()"><img src="ec2.jpeg" onmouseover="pw2()"><img src="ec3.jpeg" onmouseover="pw3()"><br><img src="ec4.jpeg" onmouseover="pw4()"><img src="ec5.jpeg" onmouseover="pw5()"><img src="ec6.jpeg" onmouseover="pw6()">
+	</div>
+	<div class="forms">
+	<h3>Book Your Tour now:</h3>
+	<form name="valida" onsubmit="return checka()" action="getec.php" method="post">
+	<table>
+		<tr><th> Price per head is INR 150</th></tr>
+
+		<tr>
+		<td><label for="name">Your Name:</label></td>
+		<td><input type="text" id="name" name="name" required></td>
+		</tr>
+		
+		<tr>
+		<td><label for="phone">Your Phone Number:</label></td>
+		<td><input type="text" id="phone" name="phone" placeholder="Not more than 10 Digits" title="10-digit Number required & Number cannot start with 0" pattern="[1-9]{1}[0-9]{9}" required></td>
+		</tr>
+
+		<tr>
+		<td><label for="age1">Your Age:</label></td>
+		<td><input type="number" id="age1" name="age" placeholder="Above 18" min="18" max="90"></td>
+		</tr>
+
+
+		<tr>
+		<td><label for="ticketno">How many tickets are required? :</label></td>
+		<td><input type="number" id="ticketno" name="ticketno" min="1" max="9" placeholder="Maximum 9" required></td>
+		</tr>
+
+		<tr>
+		<td><label for="price1">Your Total becomes:</label></td>
+		<td><input type="text" id="price1" name="price" readonly></td>
+		<td><input type="button" value="CALCULATE" class="btn" onclick="calc()">
+		</tr>
+		
+		<tr>
+		<td><input type="submit" value="SUBMIT" class="btn" onclick="subcon()" ></td>
+		<td><input type="reset" value="RESET" class="btn" onclick="rescon()"></td>
+		</tr>
+
+	</table>
+	</form>
+	</div>
+
+	<div class="forms1">
+	<p style="text-align:center;"><b><i>Click here for a quick view</i></b></p><br>
+
+	<form>
+	<input type="button" value="Prince of Wales" onclick="location.href='Princeofwales.html'" class="btn1">
+	<input type="button" value="Marine Drive" onclick="location.href='md.html'" class="btn1">
+	<input type="button" value="Kanheri Caves" onclick="location.href='Kahneri.html'" class="btn1">
+	<input type="button" value="T. Aquarium" onclick="location.href='Tare.html'" class="btn1">
+	</form>
+	</div>
+<br><br>
+</body>
+</html>
