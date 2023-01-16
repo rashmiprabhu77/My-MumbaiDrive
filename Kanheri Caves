@@ -1,0 +1,156 @@
+<html>
+<head>
+	<title>Kanheri Caves</title>
+	<style>
+	
+	hr{
+	border: 1px solid black;
+	opacity: 50%;
+	}
+	
+	body{
+		background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(khback.jpeg);
+		background-size:cover;
+		background-attachment:fixed;
+	}
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="css/css4.css">
+	<script>
+	function pw1(){
+	alert('Bottom of the right pillar before the veranda.');
+	}
+	function pw2(){
+	alert('Entrance to second cave');
+	}
+	function pw3(){
+	alert('Sulptures in cave 4');
+	}
+	function pw4(){
+	alert('Exterior of the Great Chaitya');
+	}
+	function pw5(){
+	alert('Stupa in cave 2');
+	}
+	function pw6(){
+	alert('Pillars in the Great Chaitya');
+	}
+	function rescon(){
+	confirm("Are you sure you wish to refresh all the feilds?");
+	}
+	function subcon(){
+	confirm('Are you sure you wish to submit?');
+	}
+	var x,y=0;
+	function calc(){
+	x=document.getElementById("ticketno").value;
+	if(x<0)
+	{
+		document.getElementById("price1").value="Invalid Ticket Number";
+	}
+	else{
+		y=50*(Number(x));
+		document.getElementById("price1").value="INR "+y+" for "+x+" tickets";
+	}}
+
+		
+
+	function checka(){
+  	a = document.forms["valida"]["price"].value;
+	  if (a=="") {
+  	  alert("Please click on calculate");
+ 	   return false;
+	  }
+	}
+	
+	
+	</script>
+</head>
+
+<body>
+	<div class="navbar">
+		<nav>
+		<ul>
+		<li><a href="Home.html">Home</a></li>
+		<li><a href="About.html"> About </a></li>
+		<li><a href="Support.html">Support</a></li>
+		</ul>
+		</nav>
+	</div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+	<div class="general">
+		<h1>Kanheri Caves</h1><br><hr><br><br>
+		<h3>About:</h3>
+		<br><p>The Kanheri Caves are a group of caves and rock-cut monuments cut into a massive basalt outcrop in the forests of the Sanjay Gandhi National Park, on the former island of Salsette in the western outskirts of Mumbai, India. They contain Buddhist sculptures and relief carvings, paintings and inscriptions, dating from the 1st century CE to the 10th century CE. Kanheri comes from the Sanskrit Krishnagiri, which means black mountain.</p>
+		<p>The site is on a hillside, and is accessible via rock-cut steps. The cave complex comprises one hundred and nine caves. The oldest are relatively plain and unadorned, in contrast to later caves on the site, and the highly embellished Elephanta Caves of Mumbai. Each cave has a stone plinth that functioned as a bed. A congregation hall with huge stone pillars contains a stupa (a Buddhist shrine). Rock-cut channels above the caves fed rainwater into cisterns, which provided the complex with water. Once the caves were converted to permanent monasteries, their walls were carved with intricate reliefs of Buddha and the Bodhisattvas. Kanheri had become an important Buddhist settlement on the Konkan coast by the 3rd century CE.</p>
+	</div>
+	<div class="general">
+		<h3>History:</h3>
+		<br><p>According to the archaeologists and historians, during their formative phase, they must have served as a temporary residence or ‘vasha vaasa’ (rain shelter) for the monks. The monks lived in these caves to live, study and meditate, and as a policy no woman was allowed to live in Kanheri Caves in the earlier stages and even as more and more time lapsed.</p>
+		<p>Over a period of time, the Kanheri Caves emerged as a centre of learning </p>
+		<p>The caves were abandoned in the 11th century AD, and afterwards, they were re-discovered by a group of Japanese monks. It is from here an important school of Buddhism, popular in Japan, emanated.</p>
+		<p>Inside the caves, there is a large Vihara (prayer hall) and stupas, Buddhist shrines featuring Buddhist paintings and carvings on them. There are more than 30 unfinished paintings of Buddha. The Kanheri Caves have a complex system of water harvesting, which leaves the discerning visitor awestruck.</p>
+	</div>
+	<div class="general">
+		<h3>Some Interesting Facts:</h3><br>
+		<ol>
+		<li>109 special entrances</li><br>
+		<li>Kanheri Caves are also known as the 'lungs of Mumbai'</li><br>
+		<li>There are unique iconographical forms at Kanheri such as the eleven-headed Avalokitesvara (Bodhisattva, who embodies the compassion of all Buddhas), which is the only of its kind in India, and the Dashabali Buddha, which is very rare</li>
+		</ol>
+	<br>
+		<img src="kh1.jpeg" onmouseover="pw1()"><img src="kh2.jpeg" onmouseover="pw2()"><img src="kh3.jpeg" onmouseover="pw3()"><br><img src="kh4.jpeg" onmouseover="pw4()"><img src="kh5.jpeg" onmouseover="pw5()"><img src="kh6.jpeg" onmouseover="pw6()">
+	</div>
+	<div class="forms">
+	<h3>Book Your Tour now:</h3>
+	<form name="valida" onsubmit="return checka()" action="getkh.php" method="post">
+	<table>
+		<tr><th> Price per head is INR 50</th></tr>
+
+		<tr>
+		<td><label for="name">Your Name:</label></td>
+		<td><input type="text" id="name" name="name" required></td>
+		</tr>
+		
+		<tr>
+		<td><label for="phone">Your Phone Number:</label></td>
+		<td><input type="text" id="phone" name="phone" placeholder="Not more than 10 Digits" title="10-digit Number required & Number cannot start with 0" pattern="[1-9]{1}[0-9]{9}" required></td>
+		</tr>
+
+		<tr>
+		<td><label for="age1">Your Age:</label></td>
+		<td><input type="number" id="age1" name="age" placeholder="Above 18" min="18" max="90"></td>
+		</tr>
+
+		<tr>
+		<td><label for="ticketno">How many tickets are required? :</label></td>
+		<td><input type="number" id="ticketno" name="ticketno" min="1" max="9" placeholder="Maximum 9" required></td>
+		</tr>
+
+		<tr>
+		<td><label for="price1">Your Total becomes:</label></td>
+		<td><input type="text" id="price1" name="price" readonly></td>
+		<td><input type="button" value="CALCULATE" class="btn" onclick="calc()">
+		</tr>
+		
+		<tr>
+		<td><input type="submit" value="SUBMIT" class="btn" onclick="subcon()" ></td>
+		<td><input type="reset" value="RESET" class="btn" onclick="rescon()"></td>
+		</tr>
+
+	</table>
+	</form>
+	</div>
+	<div class="forms1">
+	<p style="text-align:center;"><b><i>Click here for a quick view</i></b></p><br>
+
+	<form>
+	<input type="button" value="Elephanta Caves" onclick="location.href='Elephanta.html'" class="btn1">
+	<input type="button" value="Prince of Wales" onclick="location.href='Princeofwales.html'" class="btn1">
+	<input type="button" value="Kanheri Caves" onclick="location.href='Kahneri.html'" class="btn1">
+	<input type="button" value="T. Aquarium" onclick="location.href='Tare.html'" class="btn1">
+	</form>
+	</div>
+<br><br>
+</body>
+</html>
