@@ -1,0 +1,667 @@
+Html:
+
+
+
+
+<html> 
+
+
+
+
+
+
+<head> 
+
+
+
+
+
+
+<title>My MumbaiDrive Support</title> 
+
+
+<link rel="stylesheet" type="text/css" href="css/css2.css"> 
+
+
+<style> 
+
+
+hr{ 
+
+
+border: 1px solid black; 
+
+
+opacity: 50%; 
+
+
+} 
+
+
+
+
+
+
+</style> 
+
+
+
+
+
+
+<script> 
+
+
+function resetcon(){ 
+
+
+var z=confirm("Are you sure you wish to refresh?"); 
+
+
+if(z==true){ 
+
+
+
+
+
+
+} 
+
+
+else{ 
+
+
+return false 
+
+
+} 
+
+
+
+
+
+
+} 
+
+
+
+
+
+
+function subcon(){ 
+
+
+var w=confirm("Are you sure you wish to Submit?"); 
+
+
+if(w==true){ 
+
+
+
+
+
+
+} 
+
+
+else{ 
+
+
+return false 
+
+
+} 
+
+
+
+
+
+
+} 
+
+
+</script> 
+
+
+
+
+
+
+</head> 
+
+
+
+
+
+
+<body> 
+
+
+
+
+
+
+
+
+
+
+<div class="main"> 
+
+
+<nav> 
+
+
+<ul> 
+
+
+<li><a href="Home.html">Home</a></li> 
+
+
+<li><a href="About.html">About</a></li> 
+
+
+</ul> 
+
+
+</div> 
+
+
+</nav> 
+
+
+
+
+
+
+<br><br><br><br> 
+
+
+
+
+
+
+<div class="img"> 
+
+
+<img src="Con1.png" style="width:30%;height:35%;"> 
+
+
+</div> 
+
+
+
+
+
+
+<h1 align="center"> Welcome to My MumbaiDrive Support</h1> 
+
+
+<h4 align="center"> Tell us what you require help in</h4> 
+
+
+
+
+
+
+<br><br><hr><br><br> 
+
+
+
+
+
+
+<div class="faq"> 
+
+
+<h1>FAQs</h1><br> 
+
+
+<h3>How to Navigate the site?</h3><br> 
+
+
+<p>Navgiation of the site is really simple! Click on the Home Button at the top of the screen to view different places you may possibly love to go to!</p><br> 
+
+
+<h3>I have not recieved my confirmation text message yet</h3><br> 
+
+
+<p>We sincerly apologize for the delay caused however you can expect to recieve a confirmation text in 2 hours. If there is no message recieved within the time frame then please contact our 24/7 customer service via email or call at +917002334411 </p><br> 
+
+
+<h3>Is a refund possible?</h3><br> 
+
+
+<p>Yes refunds are possible. You can cancel your booking anytime except 6hours before entry time. </p> 
+
+
+<br> 
+
+
+<h3>Can I become an employee at MyMumbaiDrive?</h3><br> 
+
+
+<p>Yes! we're very happy to hear that from you if you're intrested please consider sending us an email at <a class="hyperlink" href="mailto:rashmiprabhu1228@gmail.com">MyMumbaiDrive.Official@gmail.com</a></p><br> 
+
+
+</div> 
+
+
+
+
+
+
+<br><br><br><br><hr><br><br> 
+
+
+
+
+
+
+
+
+
+
+<div class="feedback"> 
+
+
+
+
+
+
+<h2>Here at My MumbaiDrive we believe in giving the best and most comfortable experience to our customers </h2> 
+
+
+<br> <img class="image2" src="con2.png"><br> 
+
+
+<p>If there is something we may have missed do not hesitate! </p> 
+
+
+
+
+
+
+<p> Please feel free to send us your honest feedback:<br> <i>(please fill all fields)</i></p> 
+
+
+
+
+
+
+<form action="feedback.php" method="post"> 
+
+
+
+
+
+
+<table border-collapse:collapse;> 
+
+
+<tr> 
+
+
+<td><label for="name"><b>Name:</b></label></td> 
+
+
+<td><input type="text" name="name" size="100" class="query" required></td> 
+
+
+</tr> 
+
+
+<tr> 
+
+
+<td><label for="mail"><b>E-mail:</b></label></td> 
+
+
+<td><input type="email" id="mail" name="mail" size="100" class="query" required></td> 
+
+
+</tr> 
+
+
+<tr> 
+
+
+<td><label for="ans"><b>Have you ever Travelled with MumabiDrive?</b></label>&nbsp;</td> 
+
+
+<td><input type="radio" id="ans" name="ans" value="Yes"> 
+
+
+<label for="ans">Yes</label> &nbsp; 
+
+
+<input type="radio" id="ans1" name="ans" value="No"> 
+
+
+<label for="ans1">No</label> 
+
+
+</td> 
+
+
+</tr> 
+
+
+
+
+
+
+<tr> 
+
+
+<td><label for="comment"><b>Comment:</b></label></td> 
+
+
+<td><input type="text" name="comment" size="100" class="query"></td> 
+
+
+</tr> 
+
+
+<tr> 
+
+
+<td><input type="submit" value="Send" class="button" onclick="return subcon()"></td> 
+
+
+<td><input type="reset" value="Reset" class="button" onclick="return resetcon()"></td> 
+
+
+</tr> 
+
+
+</table> 
+
+
+</form> 
+
+
+</div> 
+
+
+
+
+
+
+<br><br><br><br><hr><br><br> 
+
+
+
+
+
+
+<div class="feedback"> 
+
+
+<h2>Your Opinion:</h2> 
+
+
+<p>If You have been to any of the places with our team please rate your experience!<br> <i>(please fill all fields)</i></p> 
+
+
+
+
+
+
+<form action="review.php" method="post"> 
+
+
+<table border-collapse:collapse;> 
+
+
+<tr> 
+
+
+<td><label for="name"><b>Name:</b></label></td> 
+
+
+<td><input type="text" name="name" size="100" class="query"></td> 
+
+
+</tr> 
+
+
+<tr> 
+
+
+<td><label for="destination"><b>Destination Visited: </b></label></td> 
+
+
+<td><select id="destination" name="destination" class="query"> 
+
+
+<option value="">--</option> 
+
+
+<option value="Marine Drive">Marine Drive</option> 
+
+
+<option value="Elephanta Caves">Elephanta Caves</option> 
+
+
+<option value="Kanheri Caves">Kanheri Caves</option> 
+
+
+<option value="Prince of Wales">Prince of Wales</option> 
+
+
+<option value="Taraporewala Aquarium">Taraporewala Aquarium</option> 
+
+
+</td> 
+
+
+</tr> 
+
+
+<tr> 
+
+
+<td><label for="rating"><b>How would you rate it?: </b></label></td> 
+
+
+<td><select id="rating" name="rating" class="query"> 
+
+
+<option value="">--</option> 
+
+
+<option value="1">1 (lowest)</option> 
+
+
+<option value="2">2</option> 
+
+
+<option value="3">3</option> 
+
+
+<option value="4">4</option> 
+
+
+<option value="5">5 (highest)</option> 
+
+
+</td> 
+
+
+</tr> 
+
+
+<tr> 
+
+
+<td><label for="comment1"><b>Any Extra Comments: </b></label></td> 
+
+
+<td><input type="text" name="comment1" size="100" class="query"></td> 
+
+
+</tr> 
+
+
+
+
+
+
+<tr> 
+
+
+<td><input type="submit" value="Send" class="button" onclick="return subcon()"></td> 
+
+
+<td><input type="reset" value="Reset" class="button" onclick="return resetcon()"></td> 
+
+
+</tr> 
+
+
+
+
+
+
+</table> 
+
+
+</forms> 
+
+
+</div> 
+
+
+<br><br><br> 
+
+
+</body> 
+
+
+</html>
+
+
+CSS:
+*{
+	margin:0;
+	padding:0;
+	font-family: Century Gothic;
+	
+}
+
+body{
+	background-color: sandybrown;	
+}
+
+.main{
+	position:fixed;
+	width:100%;
+}
+img{
+	Display: block;
+	Margin-left: auto;
+	margin-right: auto;
+}
+
+
+nav{
+	width:100%;
+	height: 80px;
+	background-color: #0009;
+	line-height:80px;
+	position:relative;
+}
+
+nav ul{
+	float:right;
+	margin-right:30px;
+}
+
+nav ul li{
+	list-style-type:none;
+	display: inline-block;
+}
+
+nav ul li:hover{
+	background-color:peru;
+	transition: 1s all;
+}
+nav ul li a{
+	text-decoration:none;
+	color:white;
+	padding:30px;
+}
+
+
+.faq{
+	margin-left:20px;
+	font-size:20px;
+}
+
+.feedback{
+	margin-left:20px;
+	font-size:20px;
+
+}
+
+.query{
+	padding:10px;
+	width:70%;
+	border-radius:7px;
+	border-style:none;
+	margin-top:3px;
+}
+
+.query:hover{
+	background-color:burlywood;
+}
+
+.query:focus{
+	background-color:chocolate;
+	border-style:solid;
+	border-color:brown;
+}
+
+.button{
+	padding:5px;
+	margin-top:5px;
+	background-color:khaki;
+	font-weight:bold;
+	font-size:20px;
+	font-variant:small-caps;
+	border-style:none;
+	width:50px;
+	border-radius:7px;
+}
+
+.button:hover{
+	background-color:burlywood;
+}
+
+.button:focus{
+	background-color:chocolate;
+	border-style:solid;
+	border-color:brown;
+}
+.hyperlink{
+	color:brown;	
+}
+
+.hyperlink:hover{
+	color:coral;	
+	border-radius:2px;
+}
+
+.hyperlink:active{
+	color:white;
+	background-color:saddlebrown;
+	border-radius:10px;
+	padding:3px;
+	
+}
+
+.image2{
+	width:300px;
+	height:200px;
+}
+	
