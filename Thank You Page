@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>Thank you!</title>
+	<style>
+	body{
+	background-color:sandybrown;
+	text-align:center;
+	font-size:40px;
+	font-family:Century gothic;
+	margin-top:200px;
+	}
+	
+	input[type="button"]{
+	padding:10px;
+	margin-right:10px;
+	border-radius:50px;
+	border-style:double;
+	border-width:5px;
+	border-color:sienna;
+	background-color:peachpuff;
+	color:sienna;
+	font-size:20px;
+	}
+	
+	input[type="button"]:hover{
+	padding:10px;
+	margin-right:10px;
+	border-radius:50px;
+	border-style:double;
+	border-color:sandybrown;
+	background-color:black;
+	color:sandybrown;
+	font-size:20px;
+	transition:0.5s ease;
+	}
+	
+	</style>
+</head>
+<body>
+	<h1>Thank you for Booking!</h1>
+	<p>Your Booking has been accepted we hope to see you soon</p> 
+	<img src="ty.png" style="width:150px;">
+	<br><br>
+
+	<p><i>Interested in more places? Wish to book again?</i></p>
+	<p>Click here for a quick view</p>
+
+	<form>
+	<input type="button" value="Elephanta Caves" onclick="location.href='Elephanta.html'">
+	<input type="button" value="Prince of Wales" onclick="location.href='Princeofwales.html'">
+	<input type="button" value="Marine Drive" onclick="location.href='md.html'">
+	<input type="button" value="Kanheri Caves" onclick="location.href='Kahneri.html'">
+	<input type="button" value="T. Aquarium" onclick="location.href='Tare.html'">
+	</form>
+</body>
+</html>
