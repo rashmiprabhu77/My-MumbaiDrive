@@ -1,0 +1,156 @@
+<html>
+<head>
+	<style>
+	
+	hr{
+	border: 1px solid black;
+	opacity: 50%;
+	}
+	
+	body{
+		background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(md2.jpeg);
+		background-size:cover;
+		background-attachment:fixed;
+	}
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="css/css4.css">
+	<script>
+	function pw1(){
+	alert('Tetrapods');
+	}
+	function pw2(){
+	alert('Dolphins spotted near Marine Drive');
+	}
+	function pw3(){
+	alert('Lively Chowpatty Beach near Marine Drive');
+	}
+	function pw4(){
+	alert('Maybe not do this');
+	}
+	function pw5(){
+	alert('Marine Drive at Night');
+	}
+	function pw6(){
+	alert('Marine Drive on a weekday');
+	}
+	function rescon(){
+	confirm("Are you sure you wish to refresh all the feilds?");
+	}
+	function subcon(){
+	confirm('Are you sure you wish to submit?');
+	}
+	var x,y=0;
+	function calc(){
+	x=document.getElementById("ticketno").value;
+	if(x<0)
+	{
+		document.getElementById("price1").value="Invalid Ticket Number";
+	}
+	else{
+		y=10*(Number(x));
+		document.getElementById("price1").value="INR "+y+" for "+x+" tickets";
+	}}
+
+		
+
+	function checka(){
+  	a = document.forms["valida"]["price"].value;
+	  if (a=="") {
+  	  alert("Please click on calculate");
+ 	   return false;
+	  }
+	}
+	
+	
+	</script>
+</head>
+
+<body>
+	<div class="navbar">
+		<nav>
+		<ul>
+		<li><a href="Home.html">Home</a></li>
+		<li><a href="About.html"> About </a></li>
+		<li><a href="Support.html">Support</a></li>
+		</ul>
+		</nav>
+	</div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+	<div class="general">
+		<h1>Marine Drive</h1><br><hr><br><br>
+		<h3>About:</h3>
+		<br><p>Marine Drive is a 3.6-kilometre-long Promenade along the Netaji Subhash Chandra Bose Road in South Mumbai in the city of Mumbai, India. Often, the names Marine Drive and Netaji Subhash Chandra Bose Road are used interchangeably to refer to this 3.9km stretch. The road and promenade were constructed by late philanthropist Bhagojisheth Keer and Pallonji Mistry. It is a 'C'-shaped six-lane concrete road along the coast of a natural bay. At the northern end of Marine Drive is Girgaon Chowpatty and the adjacent road along links Nariman Point at southern tip to Babulnath and Malabar Hill at northern tip. Marine Drive is situated on reclaimed land facing west-south-west. Marine Drive is also known as the Queen's Necklace because, when viewed at night from an elevated point anywhere along the drive, the street lights resemble a string of pearls in a necklace.</p>
+		<p>The official name for this road, though rarely used, is Netaji Subhash Chandra Bose Road. The promenade is lined with palm trees. At the northern end of Marine Drive is Chowpatty Beach. This is a popular beach famed for its Bhel Puri (local fast food). Many restaurants also line this stretch of the road. Further down this road lies Walkeshwar, a wealthy neighborhood of the city, also home to the Governor of Maharashtra.</p>
+	</div>
+	<div class="general">
+		<h3>History:</h3>
+		<br><p>Marine Drive was built as part of the British government's Back Bay Reclamation Scheme during the second phase of Mumbai's urban development in the early 20th century. This scheme involved dredging the sea and dumping stone into it, to create land and expand the city westward.</p>
+		<p>An inscription on a lamp post near Girgaum Chowpatty indicates that the construction of Marine Drive began there, at what was called Kennedy Sea Face, in 1915. It was named after Sir Michael Kavanagh Kennedy, an engineer who was Secretary of the Bombay Public Works Department and a General in the British Army. Unfortunately, he died in 1898, well before the reclamation works began.</p>
+		<p>Marine Drive actually ended up shorter than planned, as logistical problems meant less land was reclaimed than expected. By the mid 1930s, most of the infrastructure works were complete, and the pavement and sidewalk were being laid. Attention turned to architecture, particularly the Art Deco style that was gripping the world. It was seen as glamorous and modern, and was eagerly embraced by the wealthy movie stars and Parsi migrants who went on a building spree along Marine Drive.</p>
+		<p>
+	</div>
+	<div class="general">
+		<h3>Some Interesting Facts:</h3><br>
+		<ol>
+		<li>Official name of Marine drive is Netaji Subhash Chandra Bose Road.</li><br>
+		<li>One very proud fact about the Marines is that after its initial construction, the stretch was so strong that it didnt require any repairs for the next 72 years.</li><br>
+		<li>Recently, Marine Drive has been nominated as a UNESCO World Heritage Site for its stunning structures from the 19th century and 20th century art deco style buildings.</li>
+		<li>They Have Tetrapods, A tetrapod is a three-legged concrete structure used as Armour unit on breakwaters. The Tetrapods shape is designed to dissipate the force of incoming waves by allowing water to flow around rather than against it, and to reduce displacement by allowing a random distribution of Tetrapods to mutually interlock.</li>
+		</ol>
+	<br>
+		<img src="m1.jpeg" onmouseover="pw1()"><img src="m2.jpeg" onmouseover="pw2()"><img src="m3.jpeg" onmouseover="pw3()"><br><img src="m4.jpeg" onmouseover="pw4()"><img src="m5.jpeg" onmouseover="pw5()"><img src="m6.jpeg" onmouseover="pw6()">
+	</div>
+	<div class="forms">
+	<h3>Book Your Tour now:</h3>
+	<form name="valida" onsubmit="return checka()" action="getmd.php" method="post">
+	<table>
+		<tr><th> Price per head is INR 10</th></tr>
+
+		<tr>
+		<td><label for="name">Your Name:</label></td>
+		<td><input type="text" id="name" name="name" required></td>
+		</tr>
+		
+		<tr>
+		<td><label for="phone">Your Phone Number:</label></td>
+		<td><input type="text" id="phone" name="phone" placeholder="Not more than 10 Digits" title="10-digit Number required & Number cannot start with 0" pattern="[1-9]{1}[0-9]{9}" required></td>
+		</tr>
+
+		<tr>
+		<td><label for="age1">Your Age:</label></td>
+		<td><input type="number" id="age1" name="age" placeholder="Above 18" min="18" max="90"></td>
+		</tr>
+
+		<tr>
+		<td><label for="ticketno">How many tickets are required? :</label></td>
+		<td><input type="number" id="ticketno" name="ticketno" min="1" max="9" placeholder="Maximum 9" required></td>
+		</tr>
+
+		<tr>
+		<td><label for="price1">Your Total becomes:</label></td>
+		<td><input type="text" id="price1" name="price" readonly></td>
+		<td><input type="button" value="CALCULATE" class="btn" onclick="calc()">
+		</tr>
+		
+		<tr>
+		<td><input type="submit" value="SUBMIT" class="btn" onclick="subcon()" ></td>
+		<td><input type="reset" value="RESET" class="btn" onclick="rescon()"></td>
+		</tr>
+
+	</table>
+	</form>
+	</div>
+	<div class="forms1">
+	<p style="text-align:center;"><b><i>Click here for a quick view</i></b></p><br>
+
+	<form>
+	<input type="button" value="Elephanta Caves" onclick="location.href='Elephanta.html'" class="btn1">
+	<input type="button" value="Prince of Wales" onclick="location.href='Princeofwales.html'" class="btn1">
+	<input type="button" value="Kanheri Caves" onclick="location.href='Kahneri.html'" class="btn1">
+	<input type="button" value="T. Aquarium" onclick="location.href='Tare.html'" class="btn1">
+	</form>
+	</div>
+<br><br>
+</body>
+</html>
